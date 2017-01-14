@@ -1,9 +1,6 @@
-// IPC.cpp : 定义控制台应用程序的入口点。
-//
-
-#include "stdafx.h"
 #include "Clipboard.h"
 #include <iostream>
+#include "NamedPipeServer.h"
 #include "Mailslot.h"
 using namespace std;
 
@@ -28,13 +25,21 @@ void Test_MailSlot()
 	v1.OnRecv();
 
 }
+
+void Test_NamePipe()
+{
+	CNamedPipeServer v1;
+	v1.CreateNamedPipeInServer();
+	v1.NamedPipeWriteInServer("YIFI");
+
+	v1.NamedPipeReadInServer();
+}
 int main()
 {
-	
-	Test_MailSlot();
+	Test_NamePipe();
+	//Test_MailSlot();
 	getchar();
 	getchar();
 	int a = 0;
-    return 0;
+	return 0;
 }
-

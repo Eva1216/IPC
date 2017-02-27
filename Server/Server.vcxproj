@@ -101,10 +101,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>xmlrpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -143,6 +145,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Clipboard.cpp" />
+    <ClCompile Include="LPCServer.cpp" />
     <ClCompile Include="Mailslot.cpp" />
     <ClCompile Include="NamedPipeServer.cpp" />
     <ClCompile Include="Server.cpp" />
@@ -150,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="Clipboard.h" />
     <ClInclude Include="KnowLedge.h" />
+    <ClInclude Include="LPCServer.h" />
     <ClInclude Include="Mailslot.h" />
     <ClInclude Include="NamedPipeServer.h" />
   </ItemGroup>

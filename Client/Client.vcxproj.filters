@@ -30,6 +30,9 @@
     <ClInclude Include="NamedPipeClient.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LPCClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -42,6 +45,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="NamedPipeClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LPCClient.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

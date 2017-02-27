@@ -27,6 +27,9 @@
     <ClCompile Include="NamedPipeServer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LPCServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clipboard.h">
@@ -39,6 +42,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="NamedPipeServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LPCServer.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
